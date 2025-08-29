@@ -1,0 +1,172 @@
+
+h1 {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+p {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    image-alignment: center;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    video-alignment: center;
+}
+
+#registrationForm {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+h2 {
+    color: darkblue;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.item-table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rules {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding-left: 300px;
+    border-radius: 5px;
+    
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+header {
+  grid-area: header;
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background: #444;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+aside {
+  grid-area: aside;
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ddd;
+  padding: 1rem;
+  flex: 1 1 200px;
+  border-radius: 5px;
+}
+
+footer {
+  grid-area: footer;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet layout */
+@media (min-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "aside main"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 900px) {
+  .container {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "aside main"
+      "footer footer";
+    grid-template-columns: 1fr 4fr;
+  }
+}
